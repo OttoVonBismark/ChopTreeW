@@ -198,7 +198,7 @@ public class ChopWorker {
 	}
 	
 	public static short extraDurability(ItemStack item, int logs){
-		if (Storage.moreDamageToTools() <= 0.001D) return 0;
+		if (Storage.moreDamageToTools() <= 0.001D) return 1;
 		int durability = logs;
 		if (Storage.considerToolEnchantment()){
 			if (item.getEnchantments().containsKey(Enchantment.DURABILITY)){
