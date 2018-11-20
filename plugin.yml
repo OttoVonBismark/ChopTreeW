@@ -1,9 +1,9 @@
 name: ChopTreeW
 main: me.crafter.mc.choptreew.ChopTreeW
 author: connection_lost
-version: 1.8
+version: 1.9
 description: >
-             0w0
+             0w0 (post MC 1.13 versions maintained by 'OttoVonBismark')
 commands:
    choptree:
       permission: choptree.chop

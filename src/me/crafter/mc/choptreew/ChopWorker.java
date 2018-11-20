@@ -128,8 +128,12 @@ public class ChopWorker {
 	
 	public static boolean isLog(Block block){
 		switch (block.getType()){
-		case LOG:
-		case LOG_2:
+		case OAK_LOG:
+		case SPRUCE_LOG:
+		case BIRCH_LOG:
+		case ACACIA_LOG:
+		case DARK_OAK_LOG:
+		case JUNGLE_LOG:
 			return true;
 		default:
 			return false;
@@ -138,8 +142,12 @@ public class ChopWorker {
 	
 	public static boolean isLeaves(Block block){
 		switch (block.getType()){
-		case LEAVES:
-		case LEAVES_2:
+		case OAK_LEAVES:
+		case SPRUCE_LEAVES:
+		case BIRCH_LEAVES:
+		case ACACIA_LEAVES:
+		case DARK_OAK_LEAVES:
+		case JUNGLE_LEAVES:
 			return true;
 		default:
 			return false;
@@ -148,8 +156,12 @@ public class ChopWorker {
 	
 	public static boolean isLeavesOrVines(Block block){
 		switch (block.getType()){
-		case LEAVES:
-		case LEAVES_2:
+		case OAK_LEAVES:
+		case SPRUCE_LEAVES:
+		case BIRCH_LEAVES:
+		case ACACIA_LEAVES:
+		case DARK_OAK_LEAVES:
+		case JUNGLE_LEAVES:
 		case VINE:
 			return true;
 		default:

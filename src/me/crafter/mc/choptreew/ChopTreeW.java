@@ -28,18 +28,18 @@ public class ChopTreeW extends JavaPlugin {
     		}
     		if (args[0].equals("on")){
     			if (!(sender instanceof Player)){
-    				sender.sendMessage("¿ØÖÆÌ¨ÄãÏë¸ÉÉ¶?");
+    				sender.sendMessage("ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½É¶?");
     			}
     			Player p = (Player)sender;
-    			p.sendMessage(ChatColor.GOLD + "[ChopTreeW] " + ChatColor.GREEN + "Äã¿ªÆôÁËÒ»¼ü¿³Ê÷");
+    			p.sendMessage(ChatColor.GOLD + "[ChopTreeW] " + ChatColor.GREEN + "ChopTree Enabled.");
     			Storage.turn(p, true);
     			return true;
     		} else if (args[0].equals("off")){
     			if (!(sender instanceof Player)){
-    				sender.sendMessage("¿ØÖÆÌ¨ÄãÏë¸ÉÉ¶?");
+    				sender.sendMessage("ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½É¶?");
     			}
     			Player p = (Player)sender;
-    			p.sendMessage(ChatColor.GOLD + "[ChopTreeW] " + ChatColor.RED + "Äã¹Ø±ÕÁËÒ»¼ü¿³Ê÷");
+    			p.sendMessage(ChatColor.GOLD + "[ChopTreeW] " + ChatColor.RED + "ChopTree Disabled.");
     			Storage.turn(p, false);
     			return true;
     		} else {
