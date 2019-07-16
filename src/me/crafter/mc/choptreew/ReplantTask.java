@@ -7,17 +7,29 @@ import org.bukkit.block.BlockFace;
 public class ReplantTask implements Runnable {
 
 	public Block block;
-	public int logtype = 0;
+	public Material saplingType;
 	
 	@SuppressWarnings("deprecation")
 	public ReplantTask(Block log){
 		block = log;
 		switch (log.getType()){
-		case LOG:
-			logtype = log.getData() % 4;
+		case OAK_LOG:
+			saplingType = Material.OAK_SAPLING;
 			break;
-		case LOG_2:
-			logtype = log.getData() % 4 + 4;
+		case SPRUCE_LOG:
+			saplingType = Material.SPRUCE_SAPLING;
+			break;
+		case BIRCH_LOG:
+			saplingType = Material.BIRCH_SAPLING;
+			break;
+		case ACACIA_LOG:
+			saplingType = Material.ACACIA_SAPLING;
+			break;
+		case DARK_OAK_LOG:
+			saplingType = Material.DARK_OAK_SAPLING;
+			break;
+		case JUNGLE_LOG:
+			saplingType = Material.JUNGLE_SAPLING;
 			break;
 		default:
 			break;
@@ -31,9 +43,8 @@ public class ReplantTask implements Runnable {
 			switch (block.getRelative(BlockFace.DOWN).getType()){
 			case DIRT:
 			case GRASS:
-			case MYCEL:
-				block.setType(Material.SAPLING);
-				block.setData((byte)logtype);
+			case MYCELIUM:
+				block.setType(saplingType);
 				break;
 			default:
 				break;
