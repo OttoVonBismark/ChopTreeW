@@ -1,8 +1,8 @@
 name: ChopTreeW
 main: me.crafter.mc.choptreew.ChopTreeW
 author: connection_lost
-version: 1.13
-api-version: 1.13
+version: 1.14.3
+api-version: 1.14.3
 description: >
              0w0 (post MC 1.13 versions maintained by 'OttoVonBismark')
 commands:
