@@ -80,10 +80,16 @@ public class Storage {
 		}
 	}
 	
+//  Old version of isAllowed from pre-1.14.3
+//	@SuppressWarnings("deprecation")
+//	public static boolean isAllowed(ItemStack item){
+//		return (plugin.getConfig().getList("allowedtools").contains(item.getType().name()) ||
+//				plugin.getConfig().getList("allowedtools").contains(String.valueOf(item.getType().getId())));
+//	}
+
 	@SuppressWarnings("deprecation")
-	public static boolean isAllowed(ItemStack item){
-		return (plugin.getConfig().getList("allowedtools").contains(item.getType().name()) ||
-				plugin.getConfig().getList("allowedtools").contains(String.valueOf(item.getType().getId())));
+	public static boolean isAllowed(ItemStack item) {
+		return (plugin.getConfig().getList("allowedtools").contains(item.getType().name()));
 	}
 	
 	public static void saveOff(){
