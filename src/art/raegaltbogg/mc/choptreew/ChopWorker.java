@@ -57,7 +57,7 @@ public class ChopWorker {
 			// nextblock is the current highest block
 			int leavescount = 0;
 			for (BlockFace leafface : leaffaces){
-				if (isLeaves(nextblock.getRelative(leafface))){
+				if (isLeaves(nextblock.getRelative(leafface)) || isWarts(nextblock.getRelative(leafface))){
 					leavescount ++;
 				}
 			}
@@ -66,7 +66,7 @@ public class ChopWorker {
 			} else {
 				// Pine fix
 				for (BlockFace leafface : leaffaces){
-					if (isLeaves(nextblock.getRelative(BlockFace.UP).getRelative(leafface))){
+					if (isLeaves(nextblock.getRelative(BlockFace.UP).getRelative(leafface)) || isWarts(nextblock.getRelative(BlockFace.UP).getRelative(leafface))){
 						leavescount ++;
 					}
 				}
@@ -128,47 +128,73 @@ public class ChopWorker {
 	
 	public static boolean isLog(Block block){
 		switch (block.getType()){
-		case OAK_LOG:
-		case SPRUCE_LOG:
-		case BIRCH_LOG:
-		case ACACIA_LOG:
-		case DARK_OAK_LOG:
-		case JUNGLE_LOG:
-			return true;
-		default:
-			return false;
+			case OAK_LOG:
+			case SPRUCE_LOG:
+			case BIRCH_LOG:
+			case ACACIA_LOG:
+			case DARK_OAK_LOG:
+			case JUNGLE_LOG:
+			case CRIMSON_STEM:
+			case WARPED_STEM:
+				return true;
+			default:
+				return false;
 		}
 	}
-	
+
 	public static boolean isLeaves(Block block){
 		switch (block.getType()){
-		case OAK_LEAVES:
-		case SPRUCE_LEAVES:
-		case BIRCH_LEAVES:
-		case ACACIA_LEAVES:
-		case DARK_OAK_LEAVES:
-		case JUNGLE_LEAVES:
-			return true;
-		default:
-			return false;
+			case OAK_LEAVES:
+			case SPRUCE_LEAVES:
+			case BIRCH_LEAVES:
+			case ACACIA_LEAVES:
+			case DARK_OAK_LEAVES:
+			case JUNGLE_LEAVES:
+				return true;
+			default:
+				return false;
+		}
+	}
+
+	public static boolean isWarts(Block block){
+		switch (block.getType()){
+			case NETHER_WART_BLOCK:
+			case WARPED_WART_BLOCK:
+			case SHROOMLIGHT:
+				return true;
+			default:
+				return false;
 		}
 	}
 	
 	public static boolean isLeavesOrVines(Block block){
 		switch (block.getType()){
-		case OAK_LEAVES:
-		case SPRUCE_LEAVES:
-		case BIRCH_LEAVES:
-		case ACACIA_LEAVES:
-		case DARK_OAK_LEAVES:
-		case JUNGLE_LEAVES:
-		case VINE:
-			return true;
-		default:
-			return false;
+			case OAK_LEAVES:
+			case SPRUCE_LEAVES:
+			case BIRCH_LEAVES:
+			case ACACIA_LEAVES:
+			case DARK_OAK_LEAVES:
+			case JUNGLE_LEAVES:
+			case VINE:
+				return true;
+			default:
+				return false;
 		}
 	}
 	
+	public static boolean isWartsOrVines(Block block){
+		switch (block.getType()){
+			case NETHER_WART_BLOCK:
+			case WARPED_WART_BLOCK:
+			case SHROOMLIGHT:
+			case WEEPING_VINES:
+			case WEEPING_VINES_PLANT:
+				return true;
+			default:
+				return false;	
+		}
+	}
+
 	public static boolean checkPermission(Player p){
 		if (p.hasPermission("choptree.chop")){
 			return true;
