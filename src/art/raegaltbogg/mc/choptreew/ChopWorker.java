@@ -1,4 +1,4 @@
-package me.crafter.mc.choptreew;
+package art.raegaltbogg.mc.choptreew;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -193,6 +193,7 @@ public class ChopWorker {
 		return false;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public static short itemCanHandle(ItemStack item){
 		return (short) (item.getType().getMaxDurability() - item.getDurability());
 	}
@@ -219,6 +220,7 @@ public class ChopWorker {
 		else return true;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public static void applyDurability(ItemStack item, short amount){
 		item.setDurability((short)(item.getDurability() + amount));
 	}
