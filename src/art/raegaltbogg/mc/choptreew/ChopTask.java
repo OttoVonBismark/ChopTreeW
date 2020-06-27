@@ -77,6 +77,22 @@ public class ChopTask implements Runnable{
 				}
 			}
 		}
+		// Let's pop some warts!
+		int w = 2;
+		for (int x = -w; x <= w; x ++){
+			for (int y = 0; y <= w; y ++){
+				for (int z = -w; z <= w; z ++){
+					Block relative = log.getRelative(x, y, z);
+					if (ChopWorker.isWartsOrVines(relative)){
+						relative.breakNaturally();
+						if (!sounded){
+							sounded = true;
+							relative.getWorld().playSound(relative.getLocation(), Sound.BLOCK_NETHER_WART_BREAK, 0.12F, 0.9F);
+						}
+					}
+				}
+			}
+		}
 	}
 	
 }

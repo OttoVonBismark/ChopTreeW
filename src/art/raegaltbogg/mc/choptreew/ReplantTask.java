@@ -30,6 +30,12 @@ public class ReplantTask implements Runnable {
 		case JUNGLE_LOG:
 			saplingType = Material.JUNGLE_SAPLING;
 			break;
+		case CRIMSON_STEM:
+			saplingType = Material.CRIMSON_FUNGUS;
+			break;
+		case WARPED_STEM:
+			saplingType = Material.WARPED_FUNGUS;
+			break;
 		default:
 			break;
 		}
@@ -42,6 +48,8 @@ public class ReplantTask implements Runnable {
 			case DIRT:
 			case GRASS:
 			case MYCELIUM:
+			case CRIMSON_NYLIUM:
+			case WARPED_NYLIUM:
 				block.setType(saplingType);
 				break;
 			default:
