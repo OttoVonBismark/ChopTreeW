@@ -1,4 +1,4 @@
-package me.crafter.mc.choptreew;
+package art.raegaltbogg.mc.choptreew;
 
 import java.util.ArrayList;
 import java.util.Collections;

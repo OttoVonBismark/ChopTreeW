@@ -1,4 +1,4 @@
-package me.crafter.mc.choptreew;
+package art.raegaltbogg.mc.choptreew;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
