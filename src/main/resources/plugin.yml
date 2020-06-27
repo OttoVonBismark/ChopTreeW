@@ -1,8 +1,8 @@
 name: ChopTreeW
 main: art.raegaltbogg.mc.choptreew.ChopTreeW
 author: OttoVonBismark
-version: 1.14.3
-api-version: 1.14.3
+version: 1.16
+api-version: 1.16
 description: >
              0w0 (pre MC 1.13 versions authored by 'connection_lost')
 commands:

@@ -2,16 +2,19 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>art.raegaltbogg</groupId>
     <artifactId>ChopTreeW</artifactId>
-    <version>1.16.0</version>
+    <version>1.16.1</version>
     <name>ChopTreeW</name>
     <description>Bukkit plugin, living fork of ChopTreeW by connection_lost on GitHub</description>
     <build>
       <sourceDirectory>src</sourceDirectory>
       <resources>
-        <resource>
+        <!-- <resource>
           <directory>${project.basedir}/src/art/raegaltbogg/mc/choptreew</directory>
+        </resource> -->
+        <resource>
+          <directory>${project.basedir}/src/main/resources</directory>
           <includes>
-            <include>plugin.yml</include>
+            <include>*.yml</include>
           </includes>
         </resource>
       </resources>

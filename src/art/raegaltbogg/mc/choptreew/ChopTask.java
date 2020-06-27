@@ -78,7 +78,7 @@ public class ChopTask implements Runnable{
 			}
 		}
 		// Let's pop some warts!
-		int w = 2;
+		int w = 3;
 		for (int x = -w; x <= w; x ++){
 			for (int y = 0; y <= w; y ++){
 				for (int z = -w; z <= w; z ++){
