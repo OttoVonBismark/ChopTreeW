@@ -193,7 +193,10 @@ public class ChopWorker {
 		return false;
 	}
 	
+<<<<<<< HEAD
 	@SuppressWarnings("deprecation")
+=======
+>>>>>>> master
 	public static short itemCanHandle(ItemStack item){
 		return (short) (item.getType().getMaxDurability() - item.getDurability());
 	}
@@ -220,7 +223,10 @@ public class ChopWorker {
 		else return true;
 	}
 	
+<<<<<<< HEAD
 	@SuppressWarnings("deprecation")
+=======
+>>>>>>> master
 	public static void applyDurability(ItemStack item, short amount){
 		item.setDurability((short)(item.getDurability() + amount));
 	}
