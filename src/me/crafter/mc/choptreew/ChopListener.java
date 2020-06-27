@@ -13,6 +13,7 @@ public class ChopListener implements Listener {
 	
 	// Check order: isLog -> isTool -> isTree
 	@EventHandler(priority = EventPriority.MONITOR)
+	@SuppressWarnings("deprecation")
 	public void onChopTree(BlockBreakEvent event){
 		if (event.isCancelled()) return;
 		ItemStack item = event.getPlayer().getInventory().getItemInMainHand();

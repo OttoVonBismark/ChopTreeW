@@ -87,7 +87,6 @@ public class Storage {
 //				plugin.getConfig().getList("allowedtools").contains(String.valueOf(item.getType().getId())));
 //	}
 
-	@SuppressWarnings("deprecation")
 	public static boolean isAllowed(ItemStack item) {
 		return (plugin.getConfig().getList("allowedtools").contains(item.getType().name()));
 	}

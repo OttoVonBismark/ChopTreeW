@@ -9,7 +9,6 @@ public class ReplantTask implements Runnable {
 	public Block block;
 	public Material saplingType;
 	
-	@SuppressWarnings("deprecation")
 	public ReplantTask(Block log){
 		block = log;
 		switch (log.getType()){
@@ -36,7 +35,6 @@ public class ReplantTask implements Runnable {
 		}
 	}
 	
-	@SuppressWarnings("deprecation")
 	@Override
 	public void run() {
 		if (block.getType() == Material.AIR){
