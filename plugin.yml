@@ -1,10 +1,10 @@
 name: ChopTreeW
-main: me.crafter.mc.choptreew.ChopTreeW
-author: connection_lost
+main: art.raegaltbogg.mc.choptreew.ChopTreeW
+author: OttoVonBismark
 version: 1.14.3
 api-version: 1.14.3
 description: >
-             0w0 (post MC 1.13 versions maintained by 'OttoVonBismark')
+             0w0 (pre MC 1.13 versions authored by 'connection_lost')
 commands:
    choptree:
       permission: choptree.chop
