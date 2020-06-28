@@ -8,9 +8,6 @@
     <build>
       <sourceDirectory>src</sourceDirectory>
       <resources>
-        <!-- <resource>
-          <directory>${project.basedir}/src/art/raegaltbogg/mc/choptreew</directory>
-        </resource> -->
         <resource>
           <directory>${project.basedir}/src/main/resources</directory>
           <includes>
