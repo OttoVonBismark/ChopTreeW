@@ -150,6 +150,8 @@ public class ChopWorker {
 			case ACACIA_LEAVES:
 			case DARK_OAK_LEAVES:
 			case JUNGLE_LEAVES:
+			case AZALEA_LEAVES:
+			case FLOWERING_AZALEA_LEAVES:
 				return true;
 			default:
 				return false;
@@ -175,6 +177,8 @@ public class ChopWorker {
 			case ACACIA_LEAVES:
 			case DARK_OAK_LEAVES:
 			case JUNGLE_LEAVES:
+			case AZALEA_LEAVES:
+			case FLOWERING_AZALEA_LEAVES:
 			case VINE:
 				return true;
 			default:
