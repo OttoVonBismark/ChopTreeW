@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>art.raegaltbogg</groupId>
     <artifactId>ChopTreeW</artifactId>
-    <version>1.19.0</version>
+    <version>1.20.1</version>
     <name>ChopTreeW</name>
     <description>Bukkit plugin, living fork of ChopTreeW by connection_lost on GitHub</description>
     <build>
@@ -31,7 +31,7 @@
       <dependency>
         <groupId>org.spigotmc</groupId>
         <artifactId>spigot-api</artifactId>
-        <version>1.19-R0.1-SNAPSHOT</version>
+        <version>1.20.1-R0.1-SNAPSHOT</version>
         <type>jar</type>
       </dependency>
     </dependencies>
