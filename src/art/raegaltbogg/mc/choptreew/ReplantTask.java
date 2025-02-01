@@ -49,7 +49,7 @@ public class ReplantTask implements Runnable {
 		if (block.getType() == Material.AIR){
 			switch (block.getRelative(BlockFace.DOWN).getType()){
 			case DIRT:
-			case GRASS:
+			case GRASS_BLOCK:
 			case MYCELIUM:
 			case CRIMSON_NYLIUM:
 			case WARPED_NYLIUM:

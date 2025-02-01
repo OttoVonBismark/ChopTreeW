@@ -238,8 +238,8 @@ public class ChopWorker {
 		if (Storage.moreDamageToTools() <= 0.001D) return 1;
 		int durability = logs;
 		if (Storage.considerToolEnchantment()){
-			if (item.getEnchantments().containsKey(Enchantment.DURABILITY)){
-				float durabilityf = ((float)durability) / (item.getEnchantmentLevel(Enchantment.DURABILITY) + 1);
+			if (item.getEnchantments().containsKey(Enchantment.UNBREAKING)){
+				float durabilityf = ((float)durability) / (item.getEnchantmentLevel(Enchantment.UNBREAKING) + 1);
 				float probability = durabilityf - (int)durabilityf;
 				if (random.nextFloat() < probability){
 					durability = (int)durabilityf + 1;
@@ -260,6 +260,4 @@ public class ChopWorker {
 	public static void applyDurability(ItemStack item, short amount){
 		item.setDurability((short)(item.getDurability() + amount));
 	}
-	
-	
 }

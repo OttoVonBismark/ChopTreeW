@@ -94,5 +94,4 @@ public class ChopTask implements Runnable{
 			}
 		}
 	}
-	
 }
