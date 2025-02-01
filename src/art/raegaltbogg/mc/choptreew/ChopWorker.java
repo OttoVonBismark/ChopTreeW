@@ -138,6 +138,7 @@ public class ChopWorker {
 			case WARPED_STEM:
 			case MANGROVE_LOG:
 			case CHERRY_LOG:
+			case PALE_OAK_LOG:
 				return true;
 			default:
 				return false;
@@ -156,6 +157,7 @@ public class ChopWorker {
 			case FLOWERING_AZALEA_LEAVES:
 			case MANGROVE_LEAVES:
 			case CHERRY_LEAVES:
+			case PALE_OAK_LEAVES:
 				return true;
 			default:
 				return false;
@@ -185,6 +187,7 @@ public class ChopWorker {
 			case FLOWERING_AZALEA_LEAVES:
 			case MANGROVE_LEAVES:
 			case CHERRY_LEAVES:
+			case PALE_OAK_LEAVES:
 			case VINE:
 				return true;
 			default:
