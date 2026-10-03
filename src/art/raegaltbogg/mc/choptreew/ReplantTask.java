@@ -42,6 +42,9 @@ public class ReplantTask implements Runnable {
 		case PALE_OAK_LOG:
 			saplingType = Material.PALE_OAK_SAPLING;
 			break;
+		case POPLAR_LOG:
+			saplingType = Material.POPLAR_SAPLING;
+			break;
 		default:
 			break;
 		}

@@ -139,6 +139,7 @@ public class ChopWorker {
 			case MANGROVE_LOG:
 			case CHERRY_LOG:
 			case PALE_OAK_LOG:
+			case POPLAR_LOG:
 				return true;
 			default:
 				return false;
@@ -158,6 +159,9 @@ public class ChopWorker {
 			case MANGROVE_LEAVES:
 			case CHERRY_LEAVES:
 			case PALE_OAK_LEAVES:
+			case RED_POPLAR_LEAVES:
+			case ORANGE_POPLAR_LEAVES:
+			case YELLOW_POPLAR_LEAVES:
 				return true;
 			default:
 				return false;
@@ -188,6 +192,9 @@ public class ChopWorker {
 			case MANGROVE_LEAVES:
 			case CHERRY_LEAVES:
 			case PALE_OAK_LEAVES:
+			case RED_POPLAR_LEAVES:
+			case ORANGE_POPLAR_LEAVES:
+			case YELLOW_POPLAR_LEAVES:
 			case VINE:
 				return true;
 			default:
